@@ -3,7 +3,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 
-window.onload = () => {
+window.onload = async () => {
   const canvas = document.querySelector(".webgl");
 
   // Scene
@@ -14,8 +14,8 @@ window.onload = () => {
 
   const loader = new FontLoader();
 
-  loader.load(
-    "assets/helvetiker_regular.typeface.json",
+  await loader.load(
+    "../node_modules/three/examples/fonts/helvetiker_regular.typeface.json",
      async function (font) {
       const geometry = await new TextGeometry("Hello three.js!", {
         font: font,
