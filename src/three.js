@@ -46,7 +46,7 @@ loader.load( '../node_modules/three/examples/fonts/helvetiker_regular.typeface.j
 
 // Camera
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight)
+const camera = new THREE.PerspectiveCamera(75, 800 / 600)
 camera.position.z = 3
 scene.add(camera)
 
@@ -56,7 +56,7 @@ const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
 
-renderer.setSize(window.innerWidth, window.innerHeight)
+renderer.setSize(800, 600)
 
 // Controls
 
