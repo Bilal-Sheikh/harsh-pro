@@ -14,10 +14,10 @@ window.onload = async () => {
 
   const loader = new FontLoader();
 
-  await loader.load(
-    "../node_modules/three/examples/fonts/helvetiker_regular.typeface.json",
-     async function (font) {
-      const geometry = await new TextGeometry("Hello three.js!", {
+  loader.load(
+    "../static/helvetiker_regular.typeface.json",
+      function (font) {
+      const geometry = new TextGeometry("Hello three.js!", {
         font: font,
         size: 0.5,
         height: 0.2,
