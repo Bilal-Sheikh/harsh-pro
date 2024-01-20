@@ -17,7 +17,8 @@ window.onload = async () => {
     const loader = new FontLoader();
 
     loader.load(
-        "../static/helvetiker_regular.typeface.json",
+        "fonts/helvetiker_regular.typeface.json",
+        // "../static/helvetiker_regular.typeface.json",
         // typefaceFont,
         function (font) {
             const geometry = new TextGeometry("Hello three.js!", {
