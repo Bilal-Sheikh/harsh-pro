@@ -1,9 +1,9 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
-// import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
-import { FontLoader } from "three/addons/loaders/FontLoader.js";
-import typefaceFont from "three/examples/fonts/helvetiker_regular.typeface.json";
+import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
+// import { FontLoader } from "three/addons/loaders/FontLoader.js";
+import typefaceFont from "../static/helvetiker_regular.typeface.json";
 
 window.onload = async () => {
     const canvas = document.querySelector(".webgl");
